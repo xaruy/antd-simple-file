@@ -39,7 +39,7 @@ class Files extends React.Component {
     foldersModalVisible: false, // 文件移动模态框显示
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     const { dispatch, match: { params: { id, mode } } } = this.props;
     const fid = id || 0;
     const vmode = mode || 'grid';
